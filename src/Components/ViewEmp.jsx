@@ -1,9 +1,10 @@
 import axios from "axios"
 import { useEffect, useState } from "react"
-import { useParams } from "react-router-dom"
+import { useNavigate, useParams } from "react-router-dom"
 import "../Components/Css/ViewEmp.css"
 
 const ViewEmp = () => {
+  let navigate=useNavigate()
   let[emp,setEmp]=useState(null)
   let {id}=useParams()
   let fetchdata=async()=>{
