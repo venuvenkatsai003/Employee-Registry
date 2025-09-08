@@ -1,0 +1,80 @@
+.view{
+  background: linear-gradient(white, black);
+  height: 100vh;
+}
+.view main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 90vh;
+  background: #f4f6f9;
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+.view article {
+  display: flex;
+  align-items: center;
+  gap: 30px;                    
+  background: #fff;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  max-width: 800px;
+  width: 100%;
+}
+
+.view article div {
+  flex: 1;                      /* text takes remaining space */
+}
+
+.view article h1 {
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 12px;
+}
+
+.view article h1 span {
+  font-weight: bold;
+  margin-right: 8px;
+  color: #0077cc;
+}
+
+.view article p {
+  margin: 8px 0;
+  font-size: 1rem;
+  color: #555;
+}
+
+.view article p span {
+  font-weight: bold;
+  margin-right: 6px;
+  color: #222;
+}
+
+.view article img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 12px;          /* square with rounded corners */
+  border: 3px solid #0077cc;
+}
+.view button {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  article {
+    flex-direction: column;     /* stack img below text */
+    text-align: center;
+  }
+
+ article img {
+    width: 150px;
+    height: 150px;
+  }
+}

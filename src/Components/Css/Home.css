@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Ubuntu", sans-serif;
+}
+/* ! Home page */
+nav{
+    margin: 5px;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    max-height: 10vh;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+}
+nav>h1{
+    font-weight: 600;
+}
+nav>button{
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+/* ! Card */
+main{
+    display: flex;
+}
+article{
+    /* background: aliceblue; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* border: 1px solid black; */
+    max-width: 300px;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+div{
+    margin-bottom: 10px;
+}
+article>div>img{
+    /* border: 0.5px solid rgba(0, 0, 0, 0.374); */
+    margin:10px auto;
+    border-radius: 50%;
+    height: 500px;
+    width: 500px;
+}
+.img-div{
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+article>div>button{
+    margin: auto 5px ;
+    padding: 10px;
+    border-radius: 10px;
+    background:#28a745;
+    color: white;
+    border: none;
+    width: 70px;
+}
